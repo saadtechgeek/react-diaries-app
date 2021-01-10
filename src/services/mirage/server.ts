@@ -53,10 +53,6 @@ export const setupServer = (env?: string): Server => {
 
     seeds: (server): any => {
       server.create('user');
-    },
-
-    routes(): void {
-      this.urlPrefix = 'https://diaries.app';
-    },
+    }
   });
 };
